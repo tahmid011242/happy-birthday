@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Saifa Neshat 💖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,sans-serif;background:#090311;color:#fff;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-5;background:radial-gradient(circle at 20% 20%,#8b2be255,transparent 30%),radial-gradient(circle at 80% 30%,#ff4da655,transparent 30%),radial-gradient(circle at 50% 90%,#c9184a44,transparent 35%),#090311}
+#intro{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;background:radial-gradient(circle,#32104e,#090311 65%);transition:1s}
+.intro{max-width:650px}
+.mini{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:#ffb6d9;margin-bottom:18px}
+.intro h1,.script{font-family:'Great Vibes',cursive;font-weight:400}
+.intro h1{font-size:75px;background:linear-gradient(90deg,#fff,#ffacd4,#fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.intro p{color:#ddd;line-height:1.8;margin:15px 0 32px}
+.btn{border:0;border-radius:50px;padding:16px 30px;background:linear-gradient(135deg,#ff4d9d,#9555ff);color:#fff;font-weight:700;cursor:pointer;box-shadow:0 0 35px #ff4d9d55;transition:.3s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+#main{display:none}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;position:relative}
+.hero-content{max-width:850px}
+.tag{font-size:12px;letter-spacing:5px;color:#ffb3d9;text-transform:uppercase}
+.hero h1{font-family:'Great Vibes';font-size:clamp(70px,13vw,135px);font-weight:400;line-height:.9;margin:18px 0 5px;background:linear-gradient(90deg,#fff,#ffb3d9,#fff,#d5b4ff);background-size:300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient 5s infinite}
+.hero h2{font-size:clamp(25px,5vw,44px);font-weight:500}
+.hero p{max-width:620px;margin:25px auto;line-height:1.9;color:#d8d2df;font-size:15px}
+.scroll{position:absolute;bottom:25px;font-size:10px;letter-spacing:3px;color:#aaa}.scroll span{display:block;margin-top:8px;animation:bounce 1.4s infinite}
+@keyframes gradient{0%,100%{background-position:0}50%{background-position:100%}}
+@keyframes bounce{50%{transform:translateY(8px)}}
+.section{padding:95px 20px;text-align:center}
+.title{font-family:'Great Vibes';font-size:58px;color:#ffb3d9;margin-bottom:35px}
+.photo-card{max-width:520px;margin:auto;padding:10px;border-radius:30px;background:#ffffff0b;border:1px solid #ffffff22;box-shadow:0 30px 90px #0008;backdrop-filter:blur(15px)}
+.photo-card img{width:100%;display:block;border-radius:22px;max-height:700px;object-fit:cover}
+.caption{padding:18px 12px;color:#ddd;line-height:1.7;font-size:13px}
+.message{max-width:760px;margin:auto;padding:50px 35px;border-radius:30px;background:#ffffff0b;border:1px solid #ffffff1c;box-shadow:0 30px 100px #0008;backdrop-filter:blur(18px)}
+.message .quote{font-size:48px;color:#ff70b5}
+.message p{line-height:2;color:#e9e3eb;font-size:16px}
+.signature{font-family:'Great Vibes';font-size:40px;color:#ffb3d9;margin-top:30px}
+.wish{padding:80px 20px 120px;text-align:center}
+#wishText{opacity:0;transition:1s;color:#ffb3d9;margin-top:22px}
+footer{padding:35px 20px;text-align:center;border-top:1px solid #ffffff12;color:#888;font-size:12px}
+footer span{color:#ff70b5}
+.heart{position:fixed;bottom:-40px;z-index:20;pointer-events:none;animation:float linear forwards}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.confetti{position:fixed;top:-20px;width:7px;height:12px;z-index:999;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.music{position:fixed;right:18px;top:18px;z-index:50;width:48px;height:48px;border:1px solid #ffffff33;border-radius:50%;background:#ffffff12;color:#fff;backdrop-filter:blur(10px);cursor:pointer;font-size:19px}
+@media(max-width:600px){.intro h1{font-size:58px}.hero h1{font-size:78px}.message{padding:38px 23px}.title{font-size:48px}}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<section id="intro">
+  <div class="intro">
+    <div class="mini">A little surprise for my sister ✨</div>
+    <h1>Saifa Neshat</h1>
+    <p>I know this wish is a little late... 🥺<br>But some people deserve a special surprise, no matter when. 💖</p>
+    <button class="btn" onclick="openSite()">🎁 Open Your Surprise</button>
+  </div>
+</section>
+
+<div id="main">
+<button class="music" id="musicBtn" onclick="toggleMusic()" title="Birthday music">🔇</button>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="tag">A special day for a special sister</div>
+    <h1>Happy Birthday</h1>
+    <h2>Saifa Neshat 💖</h2>
+    <p>May your life always be filled with happiness, success, beautiful memories and countless reasons to smile.</p>
+  </div>
+  <div class="scroll">SCROLL TO EXPLORE<span>↓</span></div>
+</section>
+
+<section class="section">
+  <div class="title">Best Sister Ever 💕</div>
+  <div class="photo-card">
+    <img src="1909.jpg" alt="Saifa Neshat">
+    <div class="caption">A little memory of the birthday girl ✨<br>Looking beautiful as always. ❤️</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">A Little Message 💌</div>
+  <div class="message">
+    <div class="quote">“</div>
+    <p>
+      Dear <strong>Saifa</strong>, ❤️<br><br>
+      I know this birthday wish came a little late, and I'm really sorry for that. 🥺
+      But I hope this small surprise can make you smile even for a moment.<br><br>
+      You are not just my sister — you are one of the most special people in my life.
+      I wish you a life full of happiness, success, peace and beautiful moments.<br><br>
+      May every dream you have come true, and may you always keep that beautiful smile. ✨<br><br>
+      <strong>Happy Birthday, Best Sister Ever! 🎂💖</strong>
+    </p>
+    <div class="signature">With love,<br>Tahmid Ahsan ❤️</div>
+  </div>
+</section>
+
+<section class="wish">
+  <div class="title">Make A Wish ✨</div>
+  <button class="btn" onclick="makeWish()">🕯️ Make Your Wish</button>
+  <div id="wishText">✨ May your wish come true! Happy Birthday, Saifa! 💖 ✨</div>
+</section>
+
+<footer>Made with <span>♥</span> by Tahmid Ahsan<br><br>© 2026 — For Saifa Neshat</footer>
+</div>
+
+<script>
+let audioCtx, musicOn=false, timer, noteIndex=0;
+const melody=[
+  [261.63,0.35],[261.63,0.35],[293.66,0.7],[261.63,0.7],
+  [349.23,0.7],[329.63,1.2],[261.63,0.35],[261.63,0.35],
+  [293.66,0.7],[261.63,0.7],[392.00,0.7],[349.23,1.2]
+];
+
+function openSite(){
+  document.getElementById('intro').style.opacity='0';
+  setTimeout(()=>{
+    document.getElementById('intro').style.display='none';
+    document.getElementById('main').style.display='block';
+    hearts(); confetti(120); toggleMusic();
+  },800);
+}
+
+function toggleMusic(){
+  if(!audioCtx){
+    audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  }
+  if(audioCtx.state==='suspended') audioCtx.resume();
+  musicOn=!musicOn;
+  document.getElementById('musicBtn').textContent=musicOn?'🔊':'🔇';
+  if(musicOn) playLoop(); else clearTimeout(timer);
+}
+
+function playLoop(){
+  if(!musicOn) return;
+  const [freq,dur]=melody[noteIndex%melody.length];
+  const osc=audioCtx.createOscillator();
+  const gain=audioCtx.createGain();
+  osc.type='sine'; osc.frequency.value=freq;
+  gain.gain.setValueAtTime(0.0001,audioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.08,audioCtx.currentTime+0.02);
+  gain.gain.exponentialRampToValueAtTime(0.0001,audioCtx.currentTime+dur);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(); osc.stop(audioCtx.currentTime+dur);
+  noteIndex++;
+  timer=setTimeout(playLoop,dur*1000+60);
+}
+
+function hearts(){
+  const icons=['❤️','💖','💕','💗','✨','🌸'];
+  setInterval(()=>{
+    const e=document.createElement('div'); e.className='heart';
+    e.textContent=icons[Math.floor(Math.random()*icons.length)];
+    e.style.left=Math.random()*100+'%';
+    e.style.fontSize=(15+Math.random()*18)+'px';
+    e.style.animationDuration=(5+Math.random()*5)+'s';
+    document.body.appendChild(e);
+    setTimeout(()=>e.remove(),11000);
+  },500);
+}
+
+function confetti(n){
+  const colors=['#ff4d9d','#ffb3d9','#fff','#9b5cff','#ffd166'];
+  for(let i=0;i<n;i++){
+    const e=document.createElement('div'); e.className='confetti';
+    e.style.left=Math.random()*100+'%';
+    e.style.background=colors[Math.floor(Math.random()*colors.length)];
+    e.style.animationDuration=(3+Math.random()*4)+'s';
+    e.style.animationDelay=Math.random()*1.5+'s';
+    document.body.appendChild(e);
+    setTimeout(()=>e.remove(),8000);
+  }
+}
+
+function makeWish(){
+  document.getElementById('wishText').style.opacity='1';
+  confetti(100);
+}
+</script>
+</body>
+</html>
